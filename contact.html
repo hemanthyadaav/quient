@@ -104,6 +104,8 @@
         Need Help ? We would love to hear it from you on your query.
       </h4>
 
+      <p class="text-center">Note: All Fields are Mandatory</p>
+
       <div class="container">
         <div class="row">
           <div class="offset-md-3 col-md-6">
@@ -111,6 +113,7 @@
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input
+                  required
                   type="text"
                   class="form-control"
                   id="name"
@@ -121,6 +124,7 @@
               <div class="mb-3">
                 <label for="phone" class="form-label">Phone Number</label>
                 <input
+                  required
                   type="number"
                   class="form-control"
                   id="phone"
@@ -133,6 +137,7 @@
                   >Email Address</label
                 >
                 <input
+                  required
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
@@ -145,6 +150,7 @@
 
               <div class="form-floating my-4">
                 <textarea
+                  required
                   class="form-control h-25"
                   rows="5"
                   placeholder=" Enter Your Message Here"
@@ -155,7 +161,7 @@
 
               <div class="d-grid gap-2 col-md-12 mx-auto">
                 <button
-                  class="btn btn-primary"
+                  class="btn btn-outline-primary"
                   type="button"
                   onclick="handleSubmit()"
                 >
@@ -168,11 +174,80 @@
       </div>
     </div>
 
+    <footer>
+      <div class="footer-top bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 footer-about">
+              <img
+                class="logo-footer mx-auto"
+                src="images/tie.jpg"
+                alt="logo-footer"
+                width="100"
+                height="75"
+              />
+              <p>
+                A group of Enthusiasts now have a vision of training students
+                that don’t have access to placement training that can help them
+                get placed, and thereby build their future.
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact">
+              <h3 class="footer-text my-2">Contact</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Bionic Engineers,
+                Bangalore
+              </p>
+              <p><i class="fas fa-phone"></i> Phone: (+91) XXXXX XXXXX</p>
+              <p>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="mailto:test@gmail.com" style="text-decoration: none"
+                  >test@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 footer-social">
+              <h3 class="footer-text my-2">Follow us</h3>
+              <p>
+                <a
+                  href="https://www.facebook.com/TakeItEasyEngineeringcom/"
+                  target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/takeiteasyengineers/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://twitter.com/takeiteasyengi3?lang=en"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/c/TakeiteasyEngineers"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
       function handleSubmit() {
-        document.getElementById("contact").innerHTML =
-          "Thank you for contacting us!";
-          location.replace("success.html");
+        if (
+          document.getElementById("name").value != "" &&
+          document.getElementById("exampleInputEmail1").value != "" && 
+          document.getElementById("phone").value != "" &&
+          document.getElementById("floatingTextarea").value != ""
+        ) {
+          return location.replace("success.html");
+        } else {
+          return alert("Please Enter all the required fields");
+        }
       }
     </script>
     <script

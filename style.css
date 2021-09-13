@@ -13,11 +13,19 @@
   font-size: 1.3rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .navbar-nav > li {
     font-size: 1.1rem;
     padding-left: 8rem;
     padding-right: 20px;
+  }
+
+  .footer-for-desktop {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 
