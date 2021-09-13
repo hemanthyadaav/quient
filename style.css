@@ -53,13 +53,13 @@ a {
   margin-bottom: 18px;
 }
 .footer-about p a {
-  color: #aaa;
-  border-bottom: 1px dashed #666;
+  text-decoration: none;
 }
 .footer-about p a:hover,
 .footer-about p a:focus {
   color: #fff;
   border-color: #aaa;
+ 
 }
 
 .footer-contact p {
@@ -72,12 +72,11 @@ a {
 }
 .footer-contact p a {
   color: #aaa;
-  border-bottom: 1px dashed #666;
+
 }
 .footer-contact p a:hover,
 .footer-contact p a:focus {
   color: #fff;
-  border-color: #aaa;
 }
 
 .footer-social a {
