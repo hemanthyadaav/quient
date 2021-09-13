@@ -1,0 +1,48 @@
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  /* color: white; */
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-nav > li {
+    font-size: 1.1rem;
+    padding-left: 8rem;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1,h2, h3, h4, h5 {
+    text-align: center;
+  }
+
+}
+
+ul {
+  list-style-position: inside;
+}
+/* 
+.myHomePage {
+  background: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  
+} */
+/* .myNavLink:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+} */
+
+.myNavLink:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+    /* background-color: white; */
+}
+
