@@ -4,9 +4,13 @@
 }
 
 .text {
-  /* color: white; */
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
+}
+
+.footer-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -16,33 +20,79 @@
     padding-right: 20px;
   }
 }
-@media only screen and (max-width: 600px) {
-  h1,h2, h3, h4, h5 {
-    text-align: center;
-  }
-
-}
 
 ul {
   list-style-position: inside;
-}
-/* 
-.myHomePage {
-  background: url("images/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-  
-} */
-/* .myNavLink:hover{
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: white;
-} */
-
-.myNavLink:hover{
-    border: 1px solid white;
-    border-radius: 5px;
-    /* background-color: white; */
+  margin: 0;
+  padding: 0;
 }
 
+.myNavLink:hover {
+  border-radius: 5px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-top {
+  padding: 30px 0;
+  background: #333;
+  text-align: left;
+  color: #aaa;
+}
+.footer-top h3 {
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.footer-about img.logo-footer {
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.footer-about p a {
+  color: #aaa;
+  border-bottom: 1px dashed #666;
+}
+.footer-about p a:hover,
+.footer-about p a:focus {
+  color: #fff;
+  border-color: #aaa;
+}
+
+.footer-contact p {
+  word-wrap: break-word;
+}
+.footer-contact i {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #666;
+}
+.footer-contact p a {
+  color: #aaa;
+  border-bottom: 1px dashed #666;
+}
+.footer-contact p a:hover,
+.footer-contact p a:focus {
+  color: #fff;
+  border-color: #aaa;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  color: #777;
+  border: 0;
+}
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #aaa;
+  border: 0;
+}
+.footer-social i {
+  font-size: 24px;
+  vertical-align: middle;
+}
