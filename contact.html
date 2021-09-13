@@ -1,94 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Us</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-          crossorigin="anonymous"
-        />
-        <link rel="shortcut icon" href="images/tie.jpg" type="image/x-icon" />
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/tie.jpg" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <img src="images/tie.jpg" alt="" width="75" height="50" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link  myNavLink"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
+      <div class="container">
+        <img src="images/tie.jpg" alt="" width="75" height="50" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link myNavLink"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link myNavLink"
+                aria-current="page"
+                href="./about.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link myNavLink"
+                aria-current="page"
+                href="./testimonials.html"
+                >Testimonials</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link myNavLink"
+                aria-current="page"
+                href="./gallery.html"
+                >Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active myNavLink"
+                aria-current="page"
+                href="./contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center">
+      <h4 id="contact"></h4>
+    </div>
+
+    <div class="my-5">
+      <h4 class="text-center contact-text mb-4">
+        Need Help ? We would love to hear it from you on your query.
+      </h4>
+
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-3 col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phone"
+                  aria-describedby="phone"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email Address</label
                 >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link  myNavLink"
-                  aria-current="page"
-                  href="./about.html"
-                  >About Us</a
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+
+              <div class="form-floating my-4">
+                <textarea
+                  class="form-control h-25"
+                  rows="5"
+                  placeholder=" Enter Your Message Here"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Enter Your Message Here!</label>
+              </div>
+
+              <div class="d-grid gap-2 col-md-12 mx-auto">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  onclick="handleSubmit()"
                 >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link myNavLink"
-                  aria-current="page"
-                  href="./testimonials.html"
-                  >Testimonials</a
-                >
-              </li>
-    
-              <li class="nav-item">
-                <a
-                  class="nav-link myNavLink"
-                  aria-current="page"
-                  href="./gallery.html"
-                  >Gallery</a
-                >
-              </li>
-    
-              <li class="nav-item">
-                <a
-                  class="nav-link active myNavLink"
-                  aria-current="page"
-                  href="./contact.html"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-    </nav>
-    
+      </div>
+    </div>
 
+    <script>
+      function handleSubmit() {
+        document.getElementById("contact").innerHTML =
+          "Thank you for contacting us!";
+          location.replace("success.html");
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
