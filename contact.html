@@ -95,16 +95,12 @@
       </div>
     </nav>
 
-    <div class="text-center">
-      <h4 id="contact"></h4>
-    </div>
-
     <div class="my-5">
-      <h4 class="text-center contact-text mb-4">
+      <h4 class="text-center text-primary contact-text mb-4">
         Need Help ? We would love to hear it from you on your query.
       </h4>
 
-      <p class="text-center">Note: All Fields are Mandatory</p>
+      <p class="text-center text-danger">Note: All Fields are Mandatory</p>
 
       <div class="container">
         <div class="row">
@@ -113,6 +109,7 @@
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input
+                  placeholder="Name"
                   required
                   type="text"
                   class="form-control"
@@ -125,6 +122,7 @@
                 <label for="phone" class="form-label">Phone Number</label>
                 <input
                   required
+                  placeholder="Mobile Number"
                   type="number"
                   class="form-control"
                   id="phone"
@@ -137,6 +135,7 @@
                   >Email Address</label
                 >
                 <input
+                placeholder="Email"
                   required
                   type="email"
                   class="form-control"
@@ -240,7 +239,7 @@
       function handleSubmit() {
         if (
           document.getElementById("name").value != "" &&
-          document.getElementById("exampleInputEmail1").value != "" && 
+          document.getElementById("exampleInputEmail1").value != "" &&
           document.getElementById("phone").value != "" &&
           document.getElementById("floatingTextarea").value != ""
         ) {
