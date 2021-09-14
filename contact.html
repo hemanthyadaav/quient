@@ -102,7 +102,7 @@
 
       <p class="text-center text-danger">Note: All Fields are Mandatory</p>
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="offset-md-3 col-md-6">
             <form>
@@ -170,6 +170,82 @@
             </form>
           </div>
         </div>
+      </div> -->
+
+      <div id="contact" class="form-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="image-container">
+                <img
+                  class="img-fluid form-image img-thumbnail"
+                  src="images/contact.jpg"
+                  alt="alternative"
+                  width="380"
+                />
+              </div>
+              <!-- end of image-container -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-6">
+              <div class="text-container">
+                <!-- Contact Form -->
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control-input"
+                      placeholder="Name"
+                      required=""
+                      id="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      class="form-control-input"
+                      placeholder="Phone"
+                      required=""
+                      id="phone"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control-input"
+                      placeholder="Email"
+                      required=""
+                      id="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control-textarea"
+                      placeholder="Message"
+                      required=""
+                      id="message"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      type="button"
+                      onclick="handleSubmit()"
+                      class="form-control-submit-button"
+                      id="submit"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+                <!-- end of contact form -->
+              </div>
+              <!-- end of text-container -->
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of container -->
       </div>
     </div>
 
@@ -239,13 +315,13 @@
       function handleSubmit() {
         if (
           document.getElementById("name").value != "" &&
-          document.getElementById("exampleInputEmail1").value != "" &&
+          document.getElementById("email").value != "" &&
           document.getElementById("phone").value != "" &&
-          document.getElementById("floatingTextarea").value != ""
+          document.getElementById("message").value != ""
         ) {
           return location.replace("success.html");
         } else {
-          return alert("Please Enter all the required fields");
+          return alert("Please Enter All the Mandatory Fields");
         }
       }
     </script>
