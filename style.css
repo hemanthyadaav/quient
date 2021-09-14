@@ -31,14 +31,11 @@
     position: absolute;
     top: 0;
     left: 20%;
-    /* margin: 50%; */
-    /* min-width: ; */
-    height: auto;
     max-width: 60vw;
   }
   .carousel,
   .carousel-inner {
-    height: 50vh;
+    height: 70vh;
   }
 }
 
