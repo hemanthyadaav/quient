@@ -273,8 +273,37 @@ a {
   margin-bottom: 0;
 }
 
-.form-image{
+.form-image {
   max-width: 100%;
   height: auto;
-  
+}
+
+/* Gallery Page */
+
+.lightbox-gallery h2 {
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .lightbox-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.lightbox-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.lightbox-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.lightbox-gallery .item {
+  padding-bottom: 30px;
 }
