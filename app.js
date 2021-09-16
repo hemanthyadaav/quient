@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
+const port = process.env.PORT || 3030; 
+
 const url =
   "mongodb+srv://admin:admin@fswd-p-two.fw5tq.mongodb.net/form?retryWrites=true&w=majority";
 mongoose.connect(url, {
@@ -47,4 +49,4 @@ app.post("/contact.html", urlencodedParser, (req, res) => {
   res.render("success.ejs");
 });
 
-server.listen(3030);
+server.listen(port);
