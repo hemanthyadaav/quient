@@ -10,7 +10,12 @@
 
 .footer-text {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
+}
+
+.f-text{
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,6 +92,12 @@
     height: 70vh;
   }
 }
+/* #title{
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: red;
+} */
 
 @media only screen and (max-width: 768px) {
   .testimonial {
@@ -95,6 +106,10 @@
   .form-image {
     margin-bottom: 50px;
   }
+
+
+
+
 }
 
 ul {
@@ -171,7 +186,7 @@ a {
 }
 .contact-text {
   font-family: "Work Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 #contact {
@@ -306,4 +321,8 @@ a {
 
 .lightbox-gallery .item {
   padding-bottom: 30px;
+}
+
+.second-bg{
+  background-color: #F5F5F5;
 }
