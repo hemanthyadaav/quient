@@ -184,9 +184,10 @@ a {
   font-size: 24px;
   vertical-align: middle;
 }
+
 .contact-text {
   font-family: "Work Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 #contact {
@@ -325,4 +326,13 @@ a {
 
 .second-bg{
   background-color: #F5F5F5;
+}
+
+.index-title{
+  font-family: 'Ultra', serif;
+}
+
+.c-text{
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
 }

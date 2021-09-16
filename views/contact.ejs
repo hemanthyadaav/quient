@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg footer-text navbar-dark bg-dark">
     <div class="container">
       <img src="images/tie.jpg" alt="" width="75" height="50" />
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -52,15 +52,17 @@
     </div>
   </nav>
 
-  <div class="my-5">
-    <h4 class="text-center text-primary contact-text mb-4">
-      Need Help ? We would love to hear it from you on your query.
-    </h4>
+    <!-- <div class="second-bg"> -->
 
-    <p class="text-center text-danger">Note: All Fields are Mandatory</p>
+    <div class="second-bg py-5">
+      <h4 class="text-center text-primary contact-text mb-4">
+        Need Help ? We would love to hear it from you on your query.
+      </h4>
 
+      <p class="text-center text-danger c-text">*Note: All Fields are Mandatory</p>
+    </div>
 
-    <div id="contact" class="form-1">
+    <div id="contact" class="form-1 py-5 ">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -105,14 +107,14 @@
       </div>
       <!-- end of container -->
     </div>
-  </div>
 
-  <footer>
+
+  <footer class=" t-footer index-footer footer-text">
     <div class="footer-top bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-lg-4 footer-about">
-            <img class="logo-footer mx-auto" src="images/tie.jpg" alt="logo-footer" width="100" height="75" />
+            <img class="logo-footer mx-auto rounded" src="images/tie.jpg" alt="logo-footer" width="100" height="75" />
             <p>
               A group of Enthusiasts now have a vision of training students
               that don’t have access to placement training that can help them
@@ -120,19 +122,19 @@
             </p>
           </div>
           <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact">
-            <h3 class="footer-text my-2">Contact</h3>
+            <h3 class="footer-text f-text my-2">Contact</h3>
             <p>
               <i class="fas fa-map-marker-alt"></i> Bionic Engineers,
               Bangalore
             </p>
-            <p><i class="fas fa-phone"></i> Phone: +91 9876543210</p>
+            <p><i class="fas fa-phone"></i>Phone: +91 9876543210</p>
             <p>
               <i class="fas fa-envelope"></i> Email:
               <a href="mailto:test@gmail.com" style="text-decoration: none">test@gmail.com</a>
             </p>
           </div>
           <div class="col-md-4 col-lg-3 footer-social">
-            <h3 class="footer-text my-2">Follow us</h3>
+            <h3 class="footer-text f-text my-2">Follow us</h3>
             <p>
               <a href="https://www.facebook.com/TakeItEasyEngineeringcom/" target="_blank"><i
                   class="fab fa-facebook"></i></a>
@@ -170,8 +172,8 @@
       )) {
         return alert("Please Enter All the Mandatory Fields");
       }
-      else{
-        document.getElementById("my-form").reset(); 
+      else {
+        document.getElementById("my-form").reset();
       }
 
     }
