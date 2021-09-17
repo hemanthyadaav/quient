@@ -119,6 +119,11 @@
     margin-top: 2rem;
   }
 
+  table{
+    max-width: 100vw;
+    height: auto; 
+  };
+
   .form-image {
     margin-bottom: 50px;
   }
