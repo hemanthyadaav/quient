@@ -1,28 +1,28 @@
 .img {
   max-width: 100%;
-  height   : auto;
+  height: auto;
 }
 
 .text {
   font-family: "Josefin Sans", sans-serif;
-  font-size  : 3rem;
+  font-size: 3rem;
 }
 
 .footer-text {
   font-family: "Work Sans", sans-serif;
-  font-size  : 1rem;
+  font-size: 1rem;
 }
 
 .f-text {
   font-family: "Work Sans", sans-serif;
-  font-size  : 1.5rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   body {
     min-height: 100vh;
-    margin    : 0;
-    position  : relative;
+    margin: 0;
+    position: relative;
   }
 
   header {
@@ -42,7 +42,7 @@
   body::after {
     content: "";
     display: block;
-    height : 30px;
+    height: 30px;
     /* Set same as footer's height */
   }
 
@@ -54,41 +54,41 @@
 
   .s-footer {
     position: absolute;
-    bottom  : 17%;
-    width   : 100%;
-    height  : 30px;
+    bottom: 17%;
+    width: 100%;
+    height: 30px;
   }
 
   footer {
     position: absolute;
-    bottom  : 0;
-    width   : 100%;
-    height  : 30px;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
   }
 
   .t-body::after {
     content: "";
     display: block;
-    height : 70px;
+    height: 70px;
   }
 
   .t-footer {
     position: absolute;
-    bottom  : 0;
-    width   : 100%;
-    height  : 30px;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
   }
 
-  .navbar-nav>li {
-    font-size    : 1.1rem;
-    padding-left : 8rem;
+  .navbar-nav > li {
+    font-size: 1.1rem;
+    padding-left: 6rem;
     padding-right: 20px;
   }
 
   .carousel img {
-    position : absolute;
-    top      : 0;
-    left     : 20%;
+    position: absolute;
+    top: 0;
+    left: 20%;
     max-width: 60vw;
   }
 
@@ -96,6 +96,15 @@
   .carousel-inner {
     height: 70vh;
   }
+
+  .carousel-item {
+  transition: transform 3s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 3s;
+}
 }
 
 /* #title{
@@ -117,13 +126,13 @@
 
 ul {
   list-style-position: inside;
-  margin             : 0;
-  padding            : 0;
+  margin: 0;
+  padding: 0;
 }
 
 .myNavLink:hover {
-  border-radius: 5px;
-  color        : black;
+  /* border-radius: 5px; */
+  color: black;
 }
 
 a {
@@ -131,20 +140,20 @@ a {
 }
 
 .footer-top {
-  padding   : 10px 0;
+  padding: 10px 0;
   background: #333;
   text-align: left;
-  color     : #aaa;
+  color: #aaa;
 }
 
 .footer-top h3 {
   padding-bottom: 10px;
-  color         : #fff;
+  color: #fff;
 }
 
 .footer-about img.logo-footer {
-  max-width    : 100%;
-  margin-top   : 0;
+  max-width: 100%;
+  margin-top: 0;
   margin-bottom: 18px;
 }
 
@@ -154,7 +163,7 @@ a {
 
 .footer-about p a:hover,
 .footer-about p a:focus {
-  color       : #fff;
+  color: #fff;
   border-color: #aaa;
 }
 
@@ -164,8 +173,8 @@ a {
 
 .footer-contact i {
   padding-right: 10px;
-  font-size    : 18px;
-  color        : #666;
+  font-size: 18px;
+  color: #666;
 }
 
 .footer-contact p a {
@@ -178,52 +187,52 @@ a {
 }
 
 .footer-social a {
-  display      : inline-block;
-  margin-right : 20px;
+  display: inline-block;
+  margin-right: 20px;
   margin-bottom: 8px;
-  color        : #777;
-  border       : 0;
+  color: #777;
+  border: 0;
 }
 
 .footer-social a:hover,
 .footer-social a:focus {
-  color : #aaa;
+  color: #aaa;
   border: 0;
 }
 
 .footer-social i {
-  font-size     : 24px;
+  font-size: 24px;
   vertical-align: middle;
 }
 
 .contact-text {
   font-family: "Work Sans", sans-serif;
-  font-size  : 2rem;
+  font-size: 2rem;
 }
 
 #contact {
-  text-align    : center;
+  text-align: center;
   text-transform: capitalize;
-  color         : green;
-  margin-top    : 20px;
-  font-family   : "Work Sans", sans-serif;
-  font-size     : 2rem;
-  font-weight   : bold;
+  color: green;
+  margin-top: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .testimonial p {
   /* line-height: 19px; */
   /* font-size: 13px; */
   font-family: "Work Sans", sans-serif;
-  font-size  : 1rem;
-  margin-top : 16px;
+  font-size: 1rem;
+  margin-top: 16px;
 }
 
 .testimonial h5 {
-  color         : #9c27b0;
+  color: #9c27b0;
   text-transform: uppercase;
-  font-size     : 15px;
-  margin-top    : 8px;
+  font-size: 15px;
+  margin-top: 8px;
 }
 
 .testimonial:hover {
@@ -231,40 +240,40 @@ a {
 }
 
 .set-bg {
-  background-repeat  : no-repeat;
-  background-size    : cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: top center;
 }
 
 .form-group {
-  position     : relative;
+  position: relative;
   margin-bottom: 1.25rem;
 }
 
 .form-control-input,
 .form-control-textarea {
-  width             : 100%;
-  padding-top       : 0.875rem;
-  padding-bottom    : 0.875rem;
-  padding-left      : 1.5rem;
-  border            : 1px solid #cbcbd1;
-  border-radius     : 30px;
-  background-color  : #ffffff;
-  font-size         : 0.875rem;
-  line-height       : 1.5rem;
+  width: 100%;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-left: 1.5rem;
+  border: 1px solid #cbcbd1;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   -webkit-appearance: none;
   /* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-textarea {
   display: block;
-  height : 16.5rem;
+  height: 16.5rem;
   /* used instead of html rows to normalize height between Chrome and IE/FF */
 }
 
 .form-control-input:focus,
 .form-control-textarea:focus {
-  border : 1px solid #a1a1a1;
+  border: 1px solid #a1a1a1;
   outline: none;
   /* Removes blue border on focus */
 }
@@ -275,24 +284,24 @@ a {
 }
 
 .form-control-submit-button {
-  display         : inline-block;
-  width           : 100%;
-  height          : 3.25rem;
-  border          : 1px solid #4555d2;
-  border-radius   : 30px;
+  display: inline-block;
+  width: 100%;
+  height: 3.25rem;
+  border: 1px solid #4555d2;
+  border-radius: 30px;
   background-color: #4555d2;
-  color           : #ffffff;
-  font-weight     : 600;
-  font-size       : 0.875rem;
-  line-height     : 0;
-  cursor          : pointer;
-  transition      : all 0.2s;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .form-control-submit-button:hover {
-  border          : 1px solid #4555d2;
+  border: 1px solid #4555d2;
   background-color: transparent;
-  color           : #4555d2;
+  color: #4555d2;
 }
 
 .form-1 {
@@ -305,37 +314,36 @@ a {
 
 .form-image {
   max-width: 100%;
-  height   : auto;
+  height: auto;
 }
 
 /* Gallery Page */
 
 .lightbox-gallery h2 {
   margin-bottom: 40px;
-  padding-top  : 40px;
-  color        : #fff;
+  padding-top: 40px;
+  color: #fff;
 }
 
 @media (max-width: 767px) {
   .lightbox-gallery h2 {
     margin-bottom: 25px;
-    padding-top  : 25px;
-    font-size    : 24px;
+    padding-top: 25px;
+    font-size: 24px;
   }
 
   .carousel-control-next,
   .carousel-control-prev
 
-  /*, .carousel-indicators */
-    {
-        outline: white;
+  /*, .carousel-indicators */ {
+    outline: white;
   }
 }
 
 .lightbox-gallery .intro {
   font-size: 16px;
   max-width: 500px;
-  margin   : 0 auto 40px;
+  margin: 0 auto 40px;
 }
 
 .lightbox-gallery .photos {
@@ -351,18 +359,25 @@ a {
 }
 
 .index-title {
-  font-family: "Ultra", serif;
+  font-family: 'Rye', cursive;
+  font-size:2.5rem;
+  color:#5A20CB
 }
 
 .c-text {
   font-family: "Work Sans", sans-serif;
-  font-size  : 1.3rem;
+  font-size: 1.3rem;
 }
 
 .carousel-control-next,
-.carousel-control-prev
-
-/*, .carousel-indicators */
-  {
+.carousel-control-prev {
   filter: invert(100%);
+}
+
+.heading{
+  font-family: 'Spartan', sans-serif;
+}
+
+.body-text{
+  font-family: 'DM Sans', sans-serif;
 }
