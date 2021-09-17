@@ -74,7 +74,7 @@ app.get("/contact.html", (req, res) => {
 });
 
 app.post("/contact.html", urlencodedParser, (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   formData(req.body);
   res.render("success.ejs");
 });

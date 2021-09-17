@@ -115,6 +115,10 @@
 } */
 
 @media only screen and (max-width: 768px) {
+
+  #my-form{
+    margin-top: 30px; 
+  }
   .testimonial {
     margin-top: 2rem;
   }
@@ -212,7 +216,7 @@ a {
 
 .contact-text {
   font-family: "Work Sans", sans-serif;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 #contact {
@@ -324,14 +328,14 @@ a {
 
 /* Gallery Page */
 
-.lightbox-gallery h2 {
+.lightbox-gallery h1 {
   margin-bottom: 40px;
   padding-top: 40px;
   color: #fff;
 }
 
 @media (max-width: 767px) {
-  .lightbox-gallery h2 {
+  .lightbox-gallery h1 {
     margin-bottom: 25px;
     padding-top: 25px;
     font-size: 24px;
