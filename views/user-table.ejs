@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Submitted!</title>
+    <title>Admin Route!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="images/tie.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -40,23 +40,21 @@
         border-collapse: collapse;
         width: 99%;
       }
-     
+
       th,
       td {
         padding: 15px;
       }
-      
-     
     </style>
   </head>
 
   <body>
-    <!--====form section start====-->
-
-   
-    <!-- <nav class="navbar footer-text navbar-expand-lg navbar-dark bg-dark" style="width:100vw">
+    <nav
+      class="navbar footer-text navbar-expand-lg navbar-dark bg-dark"
+      style="width: 100vw"
+    >
       <div class="container">
-        <img src="images/tie.jpg" alt="" width="75" height="50" />
+        <img src="images/logo.jpg" alt="" width="75" height="50" />
         <button
           class="navbar-toggler"
           type="button"
@@ -123,89 +121,44 @@
           </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
 
-    <h2 class="text-center mt-4 heading text-success">Data from the Database</h2>
-    
-        <div class="mb-5 mt-3 mx-5 table-data">
-        <table border="1">
-            <tr>
-            <th>S.No</th>
-            <th>Full Name</th>
-            <th>Email Address</th>
-            <th>Phone</th>
-            <th>Message</th>
-            <!-- <th>Edit</th>
-                <th>Delete</th> -->
-            </tr>
+    <h2 class="text-center mt-4 heading text-success">
+      Data from the Database
+    </h2>
 
-            <% if(userData.length!=0){ var i=1; userData.forEach(function(data){ %>
-            <tr>
-            <td><%=i; %></td>
-            <td><%=data.data.name %></td>
-            <td><%=data.data.email %></td>
-            <td><%=data.data.phone %></td>
-            <td><%=data.data.message %></td>
-            <!-- <td><a href="/edit/<%=data.id%>">Edit</a></td>
-                <td><a href="/delete/<%=data.id%>">Delete</a></td> -->
-            </tr>
-            <% i++; }) %> <% } else{ %>
-            <tr>
-            <td colspan="7">No Data Found</td>
-            </tr>
-            <% } %>
-        </table>
-        </div>
-  
-    <!-- <footer class="index-footer footer-text">
-        <div class="footer-top bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-lg-4 footer-about">
-                <img class="logo-footer mx-auto rounded" src="images/tie.jpg" alt="logo-footer" width="100" height="75" />
-                <p>
-                  A group of Enthusiasts now have a vision of training students
-                  that don’t have access to placement training that can help them
-                  get placed, and thereby build their future.
-                </p>
-              </div>
-              <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact">
-                <h3 class="footer-text f-text my-2">Contact</h3>
-                <p>
-                  <i class="fas fa-map-marker-alt"></i> Bionic Engineers,
-                  Bangalore
-                </p>
-                <p><i class="fas fa-phone"></i>Phone: +91 9876543210</p>
-                <p>
-                  <i class="fas fa-envelope"></i> Email:
-                  <a href="mailto:test@gmail.com" style="text-decoration: none">test@gmail.com</a>
-                </p>
-              </div>
-              <div class="col-md-4 col-lg-3 footer-social">
-                <h3 class="footer-text f-text my-2">Follow us</h3>
-                <p>
-                  <a href="https://www.facebook.com/TakeItEasyEngineeringcom/" target="_blank"><i
-                      class="fab fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/takeiteasyengineers/" target="_blank"><i
-                      class="fab fa-instagram"></i></a>
-                  <a href="https://twitter.com/takeiteasyengi3?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
-                  <a href="https://www.youtube.com/c/TakeiteasyEngineers" target="_blank"><i class="fab fa-youtube"></i></a>
-                  <br />
-                <div>
-                  <a href="#"><i class="fab fa-whatsapp"></i></a><span>+91 9876543210</span>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </footer> -->
+    <div class="mb-5 mt-3 mx-5 table-data">
+      <table border="1">
+        <tr>
+          <th>S.No</th>
+          <th>Full Name</th>
+          <th>Email Address</th>
+          <th>Phone</th>
+          <th>Message</th>
+          <!-- <th>Edit</th> -->
+          <!-- <th>Delete</th> -->
+        </tr>
 
-      <script
+        <% if(userData.length!=0){ var i=1; userData.forEach(function(data){ %>
+        <tr>
+          <td><%=i; %></td>
+          <td><%=data.data.name %></td>
+          <td><%=data.data.email %></td>
+          <td><%=data.data.phone %></td>
+          <td><%=data.data.message %></td>
+        </tr>
+        <% i++; }) %> <% } else{ %>
+        <tr>
+          <td colspan="7">No Data Found</td>
+        </tr>
+        <% } %>
+      </table>
+    </div>
+
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>

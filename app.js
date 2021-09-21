@@ -31,19 +31,9 @@ const formData = (bodyData) => {
   });
 };
 
-//for admin to see the form details
-// var userSchema = new mongoose.Schema({
-//   name: String,
-//   phone: String,
-//   email: String,
-//   message: String,
-// });
-
-// userTable = mongoose.model("users", userSchema);
-
 var fetchData = (callback) => {
   var userData = Form.find({});
-  
+
   userData.exec(function (err, data) {
     if (err) throw err;
     // console.log((data));
@@ -53,14 +43,21 @@ var fetchData = (callback) => {
 
 var fetchTheData = (req, res) => {
   fetchData(function (data) {
-    res.render("user-table", { userData: data });
+    res.render("user-table", { userData: data});
   });
 };
 
 var router = express.Router();
-router.get('/admin',fetchTheData);
+router.get("/admin", fetchTheData);
 
-app.use("/", router); 
+app.use("/", router);
+
+
+//delete
+
+const handleDelete = (id) => {
+  console.log("delete in app.js called with id "+id);
+}
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -79,8 +76,5 @@ app.post("/contact.html", urlencodedParser, (req, res) => {
   res.render("success.ejs");
 });
 
-// app.get("/admin.html", urlencodedParser, (req, res) => {
-//   res.render("admin.ejs");
-// });
-
 server.listen(port);
+
