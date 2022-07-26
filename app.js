@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3030;
 
 const url =
-  "mongodb+srv://admin:admin@fswd-p-two.fw5tq.mongodb.net/form?retryWrites=true&w=majority";
+  	"mongodb+srv://hemanth:hemanth@mernapp.anilv6w.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
