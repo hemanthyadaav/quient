@@ -5,8 +5,7 @@ const mongoose = require("mongoose");
 
 const port = process.env.PORT || 3030;
 
-const url =
-  	"mongodb+srv://hemanth:hemanth@mernapp.anilv6w.mongodb.net/?retryWrites=true&w=majority";
+const url = process.env.URI;
 mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
